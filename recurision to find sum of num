@@ -2,25 +2,15 @@
 int rec(int i,int sum){
     sum=sum+i;
     i++;
-    int a=0;
-     printf("\n%d",sum);
-    if(i<=10){
-       
+    if(i<=5){
         sum=sum+rec(i,sum);
-        
     }
     else{
-        
     }
     return sum;
 }
-int main()
-
-{
-
+int main(){
 int i=1,sum=0;
-    printf("Hello World");
-printf("\n\n\n\nthe final value is %d",rec(i,sum));
-
-    return 0;
+printf("\nthe final value is %d",rec(i,sum));
+return 0;
 }
